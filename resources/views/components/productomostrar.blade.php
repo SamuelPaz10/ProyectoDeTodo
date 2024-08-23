@@ -49,7 +49,7 @@
                                 <tr>
                                     <td> {{ $producto['id'] }} </td>
                                     <td> {{ $producto['descripcion'] }} </td>
-                                    <td> {{ $producto['rpecio'] }} </td>
+                                    <td> {{ $producto['precio'] }} </td>
                                     <td> {{ $producto['stock'] }} </td>
                                     <td> {{ $producto['pagaIsv'] }} </td>
                                     <td>

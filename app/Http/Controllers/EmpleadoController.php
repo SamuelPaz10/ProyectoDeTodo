@@ -16,13 +16,13 @@ class EmpleadoController extends Controller
         return view("components/empleadoagregar");
     }
 
-    public function guardarProducto(Request $request){
-        $nuevoProducto = new Empleado();
-        $nuevoProducto->descripcion = $request->descripcion;
-        $nuevoProducto->precio = $request->precio;
-        $nuevoProducto->stock = $request->stock;
-        $nuevoProducto->pagaisv = $request->pagaisv;
-        $nuevoProducto->save();
+    public function guardarEmpleado(Request $request){
+        $nuevoEmpleado = new Empleado();
+        $nuevoEmpleado->nombre = $request->nombre;
+        $nuevoEmpleado->apellido = $request->apellido;
+        $nuevoEmpleado->fechaIngreso = $request->fechaingreso;
+        $nuevoEmpleado->salario = $request->salario;
+        $nuevoEmpleado->save();
 
         return redirect("empleados/mostrar");
     }
